@@ -20,7 +20,8 @@ class DB{
     public function insertData($name){
         $sql = "INSERT INTO names(name) VALUES (:name)";
         $stmt = $this->conn->prepare($sql);
-        $stmt->execute(['name' => $name]);
+        $insert_data = ['name' => $name];
+        $stmt->execute($insert_data);
     }
 
     public function getData(){

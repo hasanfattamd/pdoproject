@@ -26,6 +26,7 @@
         <input type="submit" name="insertData" value="Insert" class="gt-button rounded-right">
       </form>
 
+        <!--Delete Data-->
       <h2>Delete Data</h2>
       <form action="deleteData.php" method="POST">
         <select name="id" id="deleteList" class="gt-input full-width rounded-left">
